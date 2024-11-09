@@ -1,0 +1,149 @@
+/* Globalne style */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.navbar-nav .nav-link {
+    color: #f8f9fa; /* Jasny kolor dla lepszej widoczności */
+    font-weight: bold; /* Pogrubienie tekstu */
+    font-size: 1rem; /* Możesz dostosować rozmiar, jeśli chcesz większy tekst */
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffffff; /* Jeszcze jaśniejszy kolor przy najechaniu */
+    text-decoration: underline; /* Podkreślenie, aby podkreślić efekt hover */
+}
+
+
+.section-title {
+    font-size: 2rem;
+    color: #5cb85c;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.jumbotron {
+    color: #333; /* Ciemny kolor tekstu */
+    padding: 4rem 1rem;
+/*    background-image: url('images/kurort.jpg'); Jeśli chcesz zachować obraz tła
+*/
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    text-shadow: none; /* Usuń cień tekstu */
+}
+
+
+.banner-image img {
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Style dla kart domków */
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Style przycisków */
+.btn-primary, .btn-outline-primary {
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+/* Sekcja "O nas" */
+#about {
+    background-color: #e9f7ef;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+/* Styl stopki */
+footer {
+    background-color: #343a40;
+    color: white;
+    font-size: 1rem;
+}
+footer p {
+    margin: 0;
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+    .jumbotron h1 {
+        font-size: 1.8rem;
+    }
+    .banner-image img {
+        height: 250px;
+    }
+}
+
+
+/* Styl dla sekcji z nazwą i telefonem */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.phone-info {
+    font-size: 0.85rem; /* Jeszcze mniejsze skalowanie czcionki */
+    color: #ffffff;
+    margin-left: 30px; /* Większy odstęp między nazwą a numerem telefonu */
+    display: inline-flex;
+    align-items: center;
+}
+
+.phone-info i {
+    color: #5cb85c;
+    margin-right: 8px; /* Delikatnie większy odstęp między ikoną a numerem */
+}
+
+
+
+/* Responsywność */
+@media (max-width: 768px) {
+    .phone-info {
+        display: block;
+        font-size: 0.9rem;
+        margin-top: 5px;
+    }
+}
+
+.card-img-top {
+    height: 250px; /* Ustalona wysokość dla zdjęć */
+    width: 100%; /* Zdjęcia zajmują pełną szerokość karty */
+    object-fit: cover; /* Dopasowanie do ramki z przycięciem nadmiaru */
+    aspect-ratio: 4 / 3; /* Utrzymuje proporcje szerokości do wysokości */
+}
+
+
+#modalImage {
+    max-width: 100%; /* Zdjęcie zajmuje maksymalnie całą szerokość modalu */
+    max-height: 80vh; /* Ograniczenie wysokości do 80% wysokości widoku */
+    object-fit: contain; /* Dopasowanie obrazu bez rozciągania */
+}
+.carousel {
+    max-height: 400px; /* Ograniczenie maksymalnej wysokości dla całego komponentu */
+    overflow: hidden; /* Ukrywa nadmiar treści */
+}
+
+.carousel-inner .carousel-item img {
+    max-height: 400px !important; /* Ograniczenie wysokości dla zdjęć */
+    width: 100% !important; /* Ustawienie pełnej szerokości */
+    object-fit: cover !important; /* Dopasowanie i przycięcie obrazu */
+}
+
+
+
+
