@@ -41,6 +41,8 @@ body {
 }
 
 
+
+
 .banner-image img {
     height: 400px;
     object-fit: cover;
@@ -134,16 +136,39 @@ footer p {
     object-fit: contain; /* Dopasowanie obrazu bez rozciągania */
 }
 .carousel {
-    max-height: 400px; /* Ograniczenie maksymalnej wysokości dla całego komponentu */
+    max-height: 600px; /* Ograniczenie maksymalnej wysokości dla całego komponentu */
     overflow: hidden; /* Ukrywa nadmiar treści */
 }
 
 .carousel-inner .carousel-item img {
-    max-height: 400px !important; /* Ograniczenie wysokości dla zdjęć */
+    max-height: 600px !important; /* Ograniczenie wysokości dla zdjęć */
     width: 100% !important; /* Ustawienie pełnej szerokości */
     object-fit: cover !important; /* Dopasowanie i przycięcie obrazu */
 }
 
 
 
+/* Ograniczenie szerokości karuzeli na dużych ekranach */
+@media (min-width: 768px) {
+    .carousel {
+        max-width: 1000px; /* Ustal maksymalną szerokość karuzeli */
+        margin: 0 auto; /* Wycentrowanie karuzeli */
+    }
+    
+    .carousel .carousel-item img {
+        width: 100%; /* Pełna szerokość w obrębie karuzeli */
+        height: auto;
+        max-height: 600px; /* Maksymalna wysokość zdjęcia */
+        object-fit: cover; /* Dopasowanie obrazu bez rozciągania */
+    }
+}
+
+/* Pełna szerokość na mniejszych ekranach */
+@media (max-width: 767px) {
+    .carousel .carousel-item img {
+        width: 100%; /* Pełna szerokość na małych ekranach */
+        height: auto; /* Automatyczna wysokość */
+        object-fit: contain; /* Zapewnia pełne wyświetlenie obrazu bez przycięcia */
+    }
+}
 
