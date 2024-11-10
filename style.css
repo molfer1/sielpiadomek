@@ -99,16 +99,16 @@ footer p {
 }
 
 .phone-info {
-    font-size: 0.85rem; /* Jeszcze mniejsze skalowanie czcionki */
+    font-size: 0.85rem;
     color: #ffffff;
-    margin-left: 30px; /* Większy odstęp między nazwą a numerem telefonu */
+    margin-left: 20px; /* Odstęp między numerami telefonu */
     display: inline-flex;
     align-items: center;
 }
 
 .phone-info i {
     color: #5cb85c;
-    margin-right: 8px; /* Delikatnie większy odstęp między ikoną a numerem */
+    margin-right: 5px; /* Odstęp między ikoną a numerem */
 }
 
 
@@ -172,3 +172,27 @@ footer p {
     }
 }
 
+.amenities-list {
+    list-style: none; /* Usuwa domyślne style listy */
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.amenities-list li {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.amenities-list li i {
+    color: #5cb85c; /* Kolor ikon - możesz zmienić na dowolny */
+    margin-right: 8px; /* Odstęp między ikoną a tekstem */
+    font-size: 1.2rem; /* Rozmiar ikony */
+}
+
+.highlight {
+    color: #ffdd57; /* Jasny kolor, np. żółty */
+    font-weight: bold;
+    font-size: 1.1rem; /* Zwiększony rozmiar tekstu */
+}
